@@ -36,20 +36,20 @@ const AuthForm: React.FC<Props> = (props) => {
         </div>
 
         {/* Title */}
-        <h2 className="text-center text-lg font-semibold mb-1">
-          {isSignIn ? "Sign in to continue" : "Create an account"}
+        <h2 className="text-center text-lg font-bold mb-1">
+          {isSignIn ? "Sign in to continue" : "Create an account to continue"}
         </h2>
         <p className="text-center text-sm text-gray-500 mb-12">
           {isSignIn
             ? "Sign in to access all the features on this app"
-            : "Sign up to get started with this app"}
+            : "Create an account to access all the features on this app"}
         </p>
 
         {/* Form */}
         <form className="space-y-4" onSubmit={handleAuthSubmit}>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-bold text-gray-700 mb-1">
               Email or username
             </label>
             <input
@@ -62,7 +62,7 @@ const AuthForm: React.FC<Props> = (props) => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-bold text-gray-700 mb-1">
               Password
             </label>
             <input
@@ -76,7 +76,7 @@ const AuthForm: React.FC<Props> = (props) => {
           </div>
           {!isSignIn && (
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-bold text-gray-700 mb-1">
                     Repeat Password
                 </label>
                 <input
@@ -90,7 +90,7 @@ const AuthForm: React.FC<Props> = (props) => {
           )}
           <button
             type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md font-medium transition"
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-xl font-medium transition"
           >
             {isSignIn ? "Sign In" : "Sign Up"}
           </button>

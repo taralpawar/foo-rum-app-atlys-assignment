@@ -21,6 +21,10 @@
   }
 }
 
+body{
+  font-family: 'Inter';
+}
+
 .modal-enter {
   animation: fadeIn 0.3s ease-out forwards;
 }

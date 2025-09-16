@@ -74,7 +74,7 @@ const FooRumApp: React.FC<Props> = (props) => {
   }, [props.isAuthenticated]);
 
   return (
-    <div className={`min-h-screen`}>
+    <div className={`mt-4 min-h-screen`}>
       {/* Main Content */}
       <main className="max-w-2xl mx-auto px-4 py-6" onClick={handleContentClick}>
         {/* New Post */}

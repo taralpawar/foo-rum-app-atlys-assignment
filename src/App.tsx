@@ -13,7 +13,7 @@ function App() {
     <div className="flex flex-col min-h-screen h-[100vh] overflow-hidden">
       <BrowserRouter>
         <AppHeader isAuthenticated={isAuthenticated}/>
-        <main className='flex-1 overflow-y-auto'>
+        <main className='flex justify-center flex-1 overflow-y-auto'>
         <Routes>
           <Route path='/' element={<FooRumApp isAuthenticated={isAuthenticated} setIsAuthenticated={(val:boolean) => setIsAuthenticated(val)}/>} />
           <Route path='/auth' element={<AuthPage isAuthenticated={isAuthenticated} setIsAuthenticated={(val:boolean) => setIsAuthenticated(val)}/>} />
